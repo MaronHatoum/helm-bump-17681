@@ -1,40 +1,19 @@
 apiVersion: v2
-name: nri-kube-events
-description: A Helm chart to deploy the New Relic Kube Events router
-home: https://docs.newrelic.com/docs/integrations/kubernetes-integration/kubernetes-events/install-kubernetes-events-integration
-icon: https://newrelic.com/themes/custom/curio/assets/mediakit/NR_logo_Horizontal.svg
-sources:
-  - https://github.com/newrelic/nri-kube-events/
-  - https://github.com/newrelic/nri-kube-events/tree/main/charts/nri-kube-events
-  - https://github.com/newrelic/infrastructure-agent/
-
-version: 2.2.7
-appVersion: 1.8.0
-
+description: A Helm chart to deploy New Relic Kubernetes Logging as a DaemonSet, supporting both Linux and Windows nodes and containers
+name: newrelic-logging
+version: 1.11.7
+appVersion: 1.14.0
+home: https://github.com/newrelic/kubernetes-logging
+icon: https://newrelic.com/assets/newrelic/source/NewRelic-logo-square.svg
+maintainers:
+  - name: jsubirat
+    email: logging-team@newrelic.com
+  - name: danybmx
+  - name: sdaubin
+keywords:
+  - logging
+  - newrelic
 dependencies:
   - name: common-library
     version: 1.0.6
     repository: "https://helm-charts.newrelic.com"
-
-maintainers:
-  - name: alvarocabanas
-    url: https://github.com/alvarocabanas
-  - name: carlossscastro
-    url: https://github.com/carlossscastro
-  - name: sigilioso
-    url: https://github.com/sigilioso
-  - name: gsanchezgavier
-    url: https://github.com/gsanchezgavier
-  - name: kang-makes
-    url: https://github.com/kang-makes
-  - name: marcsanmi
-    url: https://github.com/marcsanmi
-  - name: paologallinaharbur
-    url: https://github.com/paologallinaharbur
-  - name: roobre
-    url: https://github.com/roobre
-
-keywords:
-  - infrastructure
-  - newrelic
-  - monitoring
